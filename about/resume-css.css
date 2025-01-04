@@ -1,67 +1,80 @@
 html, body {
-    margin: 0px;
-    padding: 10px;
-    background-color: #f8f8f8; /* 设置整体背景色为浅灰色 */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative; /* 使body成为相对定位的父容器 */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* 确保视频覆盖整个视口的宽度 */
+    bottom: 0; /* 确保视频覆盖整个视口的高度 */
+    z-index: -1;
+    object-fit: cover;
 }
 
 .box {
-    margin: 0px auto; /* 将div盒子居中 */
-    width: 1000px; /* A4纸宽度 */
-    height: 1300px; /* A4纸高度 */
-    background-color: #f8f8f8; /* 设置背景色为浅灰色 */
-    position: relative; /* 用于定位左右部分 */
+    background-color: rgba(234, 234, 234,0.5);
+    margin: 0 auto;
+    width: 1000px;
+    height: 1300px;
+    position: relative;
+    z-index: 1;
 }
 
-/* 左侧内容 */
 .left-box {
-    background-color: #eaeaea; /* 左侧背景色为稍深的灰色 */
-    width: 300px; /* 左侧部分宽度 */
-    height: 1300px; /* 左侧部分高度 */
-    position: absolute; /* 绝对定位 */
-    left: 0; /* 位于左侧 */
-    top: 0; /* 从顶部开始 */
+    background-color: rgba(234, 234, 234,0.5);
+    width: 300px;
+    height: 1300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .me-img {
-    text-align: center; /* 使图片在其父容器中水平居中 */
-    margin-left: 50px; /* 20% of 300px = 60px, 但这里直接使用像素值 */
-    width: 200px; /* 宽度设置为200px */
-    height: 400px; /* 高度设置为300px */
-    position: relative; /* 用于定位图片 */
+    text-align: center;
+    margin-left: 50px;
+    width: 200px;
+    height: 400px;
+    position: relative;
     top: 60px;
 }
 
 .me-img img {
-    display: block; /* 使用块级元素以实现水平居中 */
-    margin: 0 auto; /* 水平居中 */
-    width: 70%; /* 设置图片的宽度 */
-    height: auto; /* 高度自动调整以保持图片比例 */
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
 }
+
 .basic-information {
     margin-left: 30px;
 }
 
-.honor-award { /* 荣誉奖励 */
+.honor-award {
     margin-left: 30px;
-    width: 240px; /* 80% of 300px = 240px */
+    width: 240px;
 }
 
 .honor-award table {
     margin-left: 30px;
 }
 
-/* 右侧内容 */
 .right-box {
-    background-color: #ffffff; /* 右侧背景色为白色 */
-    width: 700px; /* 右侧部分宽度 */
-    height: 1300px; /* 右侧部分高度 */
-    position: absolute; /* 绝对定位 */
-    right: 0; /* 位于右侧 */
-    top: 0; /* 从顶部开始 */
-    padding-left: 30px; /* 左边距 */
-    padding-right: 30px; /* 右边距 */
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 700px;
+    height: 1300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     box-sizing: border-box;
     font-family: "Times New Roman", Times, serif;
+    z-index: 1;
 }
 
 .self-assessment {
