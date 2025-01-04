@@ -1,0 +1,83 @@
+html, body {
+    margin: 0px;
+    padding: 10px;
+    background-color: #f8f8f8; /* 设置整体背景色为浅灰色 */
+}
+
+.box {
+    margin: 0px auto; /* 将div盒子居中 */
+    width: 1000px; /* A4纸宽度 */
+    height: 1300px; /* A4纸高度 */
+    background-color: #f8f8f8; /* 设置背景色为浅灰色 */
+    position: relative; /* 用于定位左右部分 */
+}
+
+/* 左侧内容 */
+.left-box {
+    background-color: #eaeaea; /* 左侧背景色为稍深的灰色 */
+    width: 300px; /* 左侧部分宽度 */
+    height: 1300px; /* 左侧部分高度 */
+    position: absolute; /* 绝对定位 */
+    left: 0; /* 位于左侧 */
+    top: 0; /* 从顶部开始 */
+}
+
+.me-img {
+    text-align: center; /* 使图片在其父容器中水平居中 */
+    margin-left: 50px; /* 20% of 300px = 60px, 但这里直接使用像素值 */
+    width: 200px; /* 宽度设置为200px */
+    height: 400px; /* 高度设置为300px */
+    position: relative; /* 用于定位图片 */
+    top: 60px;
+}
+
+.me-img img {
+    display: block; /* 使用块级元素以实现水平居中 */
+    margin: 0 auto; /* 水平居中 */
+    width: 70%; /* 设置图片的宽度 */
+    height: auto; /* 高度自动调整以保持图片比例 */
+}
+.basic-information {
+    margin-left: 30px;
+}
+
+.honor-award { /* 荣誉奖励 */
+    margin-left: 30px;
+    width: 240px; /* 80% of 300px = 240px */
+}
+
+.honor-award table {
+    margin-left: 30px;
+}
+
+/* 右侧内容 */
+.right-box {
+    background-color: #ffffff; /* 右侧背景色为白色 */
+    width: 700px; /* 右侧部分宽度 */
+    height: 1300px; /* 右侧部分高度 */
+    position: absolute; /* 绝对定位 */
+    right: 0; /* 位于右侧 */
+    top: 0; /* 从顶部开始 */
+    padding-left: 30px; /* 左边距 */
+    padding-right: 30px; /* 右边距 */
+    box-sizing: border-box;
+}
+
+.self-assessment {
+    padding-top: 120px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.self-assessment p {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.professional-skills {
+    margin-left: 10px;
+}
+
+.professional-skills ol {
+    font-size: 20px;
+}
