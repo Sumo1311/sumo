@@ -61,6 +61,7 @@ html, body {
     padding-left: 30px; /* 左边距 */
     padding-right: 30px; /* 右边距 */
     box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .self-assessment {
