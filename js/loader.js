@@ -13,6 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // 设置六秒后隐藏动画元素
         setTimeout(function() {
             splashScreen.style.display = 'none';
-        }, 5000); // 6000毫秒 = 6秒
+        }, 4000); // 6000毫秒 = 6秒
     }
 });
