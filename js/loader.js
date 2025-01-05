@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // 设置五秒后开始淡出动画
         setTimeout(function() {
             splashScreen.style.animation = 'fadeOut 1s ease-out forwards'; // 应用淡出动画
-        }, 4000); // 5000毫秒 = 5秒
+        }, 3000); // 5000毫秒 = 5秒
 
         // 设置六秒后隐藏动画元素
         setTimeout(function() {
             splashScreen.style.display = 'none';
-        }, 6000); // 6000毫秒 = 6秒
+        }, 5000); // 6000毫秒 = 6秒
     }
 });
