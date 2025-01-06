@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>四宫格翻转矩形</title>
+    <title>看看这博客都有啥</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="background-image">
     <div class="grid-container">
         <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
-                    点击翻转
+                <div style="text-align: center;">
+                    <img src="../image/love.svg" alt="图片" style="width: 100%; height: 100%;">
+                    </div>
                 </div>
                 <div class="flip-box-back">
-                    
+                    <p class="center-text1">查看我的生活动态<br>看看我最近又在尝试什么东西
                 </div>
             </div>
         </div>
         <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="flip-box-front">
-                    点击翻转
+                <div style="text-align: center;">
+                    <img src="../image/play.svg" alt="图片" style="width: 100%; height: 100%;">
+                    </div>
                 </div>
                 <div class="flip-box-back">
-                    翻转后
+                     <p class="center-text2">个人爱好非常广泛<br>电子数码、fps、DIY、摄像直播等等等等（列不完）
                 </div>
             </div>
         </div>
@@ -36,7 +41,7 @@
                     </div>
                 </div>
                 <div class="flip-box-back">
-                    <p class="center-text1">可以在我的各个帖子底下留言<br>欢迎大家给我留言！！！
+                    <p class="center-text3">可以在我的各个帖子底下留言<br>欢迎大家给我留言！！！
                     </p>
                 </div>
             </div>
@@ -50,13 +55,13 @@
                 </div>
                 <div class="flip-box-back">
                     <a href=" / " target="_blank">
-                    <p class="center-text2">返回首页
+                    <p class="center-text4">返回首页<br>看看这博客有没有那么吸引人
                     </a>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
     <script>
         const flipBoxes = document.querySelectorAll('.flip-box');
         flipBoxes.forEach(box => {
