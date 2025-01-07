@@ -99,7 +99,6 @@ var _hmt = _hmt || [];
 
 </head>
 <body>
-   
    <div id="splash-screen" class="splash-screen">
 <div class="loader">
   <span class="l">
@@ -211,16 +210,16 @@ var _hmt = _hmt || [];
 </div>
 
 
-
+    
     <div id="container" q-class="show:isCtnShow">
         <canvas id="anm-canvas" class="anm-canvas"></canvas>
         <div class="left-col" q-class="show:isShow">
             
 
 
-<div class="overlay" style="background: #4d4d4d;"><div style="text-align: center; color: #DCDCDC; font-size: 14px;">
-    <br>不知道点开干嘛？<br>那就点我头像！👇👇👇
-</div></div>
+<link rel="stylesheet" href="/css/screen.css">
+<div id="emoji-container"></div>
+<div class="overlay" style="background: #4d4d4d;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/myself/index.html" class="profilepic">
@@ -238,7 +237,7 @@ var _hmt = _hmt || [];
 			
 				<li><a href="/about/resume.html" target="_blank">个人简历</a></li>
 			
-				<li><a href="/" target="_blank">随笔</a></li>
+				<li><a href="/menu/menu.html" target="_blank">板块</a></li>
 			
 			</ul>
 		</nav>
@@ -292,7 +291,7 @@ var _hmt = _hmt || [];
 		</nav>
 	</header>		
 </div>
-
+<script src="/js/screen.js"></script>
 
         </div>
         <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
@@ -353,7 +352,7 @@ var _hmt = _hmt || [];
 		        
 					<li style="width: 33.333333333333336%"><a href="/about/resume.html">个人简历</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/menu/menu.html">板块</a></li>
 		        
 				</ul>
 			</nav>
@@ -805,7 +804,6 @@ var _hmt = _hmt || [];
 
 </div>
     </div>
-
     
 <script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
 <script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
@@ -849,5 +847,6 @@ var _hmt = _hmt || [];
     
     <!-- 在</body>标签之前引入JavaScript文件 -->
   <script src="/js/loader.js"></script>
+  
 </body>
 </html>

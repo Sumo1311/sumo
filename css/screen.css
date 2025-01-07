@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('../image/001.ttf') format('truetype');
+}
+
+#emoji-container {
+    position: fixed; /* 使用fixed定位，使其始终在页面上 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 宽度为100%，覆盖整个页面 */
+    height: 100%; /* 高度为100%，覆盖整个页面 */
+    z-index: 9999; /* 确保z-index值高于其他页面元素 */
+    pointer-events: none; /* 禁止鼠标事件，使动画不会影响页面的交互 */
+}
+
+.emoji {
+    position: absolute;
+    font-family: 'font', sans-serif;
+    font-size: 2em; /* 可以调整表情大小 */
+    color: #ADD8E6;
+    opacity: 0.8;
+    animation: fall 5s linear;
+}
+
+@keyframes fall {
+    0% {
+        top: -100px;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
