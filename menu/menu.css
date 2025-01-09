@@ -1,3 +1,25 @@
+/* 针对小屏幕设备的样式（如手机） */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* 针对大屏幕设备的样式（如桌面电脑） */
+@media (min-width: 1920px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 @font-face {
     font-family: 'font';
     src: url('../image/002.ttf') format('truetype');
