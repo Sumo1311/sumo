@@ -2,10 +2,7 @@
 @media (max-width: 600px) {
   body {
     font-size: 14px;
-  }
-  .container {
-    width: 100%;
-    padding: 10px;
+    line-height: 1.5; /* 增加行高以提高可读性 */
   }
 }
 
@@ -35,6 +32,7 @@ body {
 }
 
 .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
