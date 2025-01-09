@@ -1,0 +1,100 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ball-1 {
+    top: 0;
+    left: 0;
+    animation: hit1 2s 8s infinite;
+}
+
+.ball-2 {
+    top: 0;
+    right: 0;
+    animation-delay: 2s; 
+    animation: hit2 2s 8s infinite;
+}
+
+.ball-3 {
+    bottom: 0;
+    right: 0;
+    animation-delay: 4s;
+    animation: hit3 2s 8s infinite;
+}
+
+.ball-4 {
+    bottom: 0;
+    left: 0;
+    animation-delay: 6s;
+    animation: hit4 2s 8s infinite;
+}
+
+@keyframes hit1 {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 280px;
+    }
+}
+
+@keyframes hit2 {
+    0% {
+        top: 0;
+        right: 0;
+    }
+    100% {
+        top: 280px;
+        right: 0;
+    }
+}
+
+@keyframes hit3 {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+    100% {
+        bottom: 0;
+        right: 280px;
+    }
+}
+
+@keyframes hit4 {
+    0% {
+        bottom: 0;
+        left: 0;
+    }
+    100% {
+        bottom: 280px;
+        left: 0;
+    }
+}
